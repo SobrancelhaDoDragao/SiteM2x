@@ -1,0 +1,320 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: Arial,sans-serif;}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body {
+background-color:#ffffff;
+background-image:linear-gradient(to right, #eeeeee 2px, transparent 1px),repeating-linear-gradient(#eeeeee,#eeeeee 2px, transparent 2px,transparent 33.33%);
+background-size: 25%;
+
+}
+
+ul li{
+    display: inline;
+    padding: 0.4em;
+}
+.container{
+    margin: 0em 4em;/*Margem em cima e nas laterais*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+          "header header" /*Primeira linha*/
+          "main main"
+          "footer footer"
+    ;
+}
+
+
+header{
+    grid-area: header;
+    display: grid;
+    padding-top: auto;
+    grid-template-columns: 1fr 4fr;
+    font-size: 18px;
+}
+
+
+.nav{
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1em;
+
+}
+
+main{
+    grid-area: main;
+    display: grid; /*O margin auto só funciona no grid*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:100vh 90vh 340vh 80vh;
+    
+    grid-template-areas: 
+          "home home" /*Primeira linha*/
+          "about about"
+          "work work"
+          "estrategiaGrafico estrategiaGrafico"
+    ;
+ 
+}
+
+#home{
+    grid-area: home;
+    margin-top: 20vh;
+}
+
+#TituloPrincipal{
+   margin: auto;
+}
+#TituloParte1{
+    font-size: 110pt;
+    text-align: center;
+}
+
+#TituloParte2{
+    font-size: 70pt;
+    text-align: center;
+}
+
+#about{
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+          "texto texto" /*Primeira linha*/
+          "card1 card2"
+          
+    ;
+
+
+}
+
+#texto p{
+    text-indent:50px;
+}
+
+#texto{
+    grid-area: texto;
+    display: grid;
+    font-size: 30px;
+    justify-items: center;
+    text-align: justify;
+    padding: 3vw;
+}
+
+
+#card1{
+    display: grid;
+    grid-area: card1;
+    background-color: darkcyan;
+    margin-right: 1vw;
+    font-size: 30px;
+    height: 30vh;
+}
+
+#card2{
+    display: grid;
+    grid-area: card2;
+    background-color:cornflowerblue;
+    margin-left: 1vw;
+    font-size: 20px;
+    height: 30vh;
+}
+
+#card1 p {
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+#card2 p {
+    margin: auto;
+    text-align: justify;
+    padding: 1em;
+    text-indent:10px;
+}
+
+
+
+#work{
+    display: grid;
+    grid-area: work;
+
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+          "pessoas pessoas" /*Primeira linha*/
+          "processo processo"
+    ;
+
+    font-size: 30pt;
+
+    justify-items: center;
+}
+
+
+#processo{
+    display: grid;
+    grid-area: processo;
+    grid-template-columns: 1fr 1fr;
+    padding: 3vw;
+    grid-template-areas:
+          "h1processo h1processo"
+          "dados mais1" /*Primeira linha*/
+          "mais2 sinais"
+          "estrategias mais3"
+          "mais4 testeEstrategias"
+          "simulado mais5"
+          "mais6 producao"
+          "textoprocesso textoprocesso"
+    ;
+
+}
+
+#h1processo{
+    display: grid;
+    grid-area: h1processo;
+    text-align: center;
+}
+
+#pessoas{
+    display: grid;
+    grid-area: pessoas;
+    text-align: justify;
+    font-size: 30px;
+    text-indent:50px;
+    padding: 3vw;
+}
+#pessoas h1{
+    text-align: center;
+}
+
+
+#mais1,#mais2,#mais3,#mais4,#mais5,#mais6{
+    display: grid;
+    text-align: center;
+    margin: auto;
+}
+
+#mais1{
+    grid-area: mais1;
+}
+
+#mais2{
+    grid-area: mais2;
+}
+
+#mais3{
+    grid-area: mais3;
+}
+
+#mais4{
+    grid-area: mais4;
+}
+
+#mais5{
+    grid-area: mais5;
+}
+
+#mais6{
+    grid-area: mais6;
+}
+
+#dados,#sinais,#estrategias,#testeEstrategias,#simulado,#producao{
+    display: grid;
+    margin: auto;
+    text-align: center;
+    background-color:cornflowerblue;
+    padding: 2em;
+    border-radius: 70px;
+    border: 2px solid black;
+
+}
+
+#dados{
+    grid-area: dados;
+}
+
+#sinais{
+    grid-area: sinais;
+}
+
+#estrategias{
+    grid-area: estrategias;   
+}
+
+#testeEstrategias{
+    grid-area: testeEstrategias;
+}
+
+#simulado{
+    grid-area: simulado;
+}
+
+#producao{
+    grid-area: producao;
+}
+
+#textoprocesso{
+    grid-area: textoprocesso;
+    text-indent:50px;
+    margin-top: 1em;
+    text-align: justify;
+    font-size: 30px;
+}
+
+footer{
+    grid-area: footer;
+
+    text-align: center;
+    text-indent: 20px;
+}
+
+#M2X{
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.TituloInterno{
+    margin-bottom: 0.5em;
+}
+
+#estrategiaGrafico{
+    display: grid;
+    grid-area: estrategiaGrafico;
+  
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+    "estrategiaGraficoH1 estrategiaGraficoH1"
+    ". estrategiaGraficoTexto"
+    "estrategiaGraficoGrafico ."
+   ;
+   
+   
+}
+
+#estrategiaGraficoH1{
+    display: grid;
+    grid-area: estrategiaGraficoH1;
+    text-align: center;
+    padding: 3vw;
+    font-size: 45px;
+}
+
+#estrategiaGraficoTexto{
+
+    font-size: 30px;
+    text-indent:50px;
+    padding: 3vw;
+    text-align: justify;
+}
+#estrategiaGraficoGrafico{
+
+    text-indent:50px;
+    padding: 3vw;
+}
