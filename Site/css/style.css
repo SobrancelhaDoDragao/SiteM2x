@@ -75,11 +75,17 @@ main{
 
 #TituloPrincipal{
    margin: auto;
+   
 }
+
+
 #TituloParte1{
     font-size: 10em;
     text-align: center;
+
+
 }
+
 
 #TituloParte2{
     font-size: 5em;
@@ -95,8 +101,7 @@ main{
           "card1 card2"
           
     ;
-
-
+   
 }
 
 #texto p{
@@ -118,8 +123,9 @@ main{
     grid-area: card1;
     background-color: darkcyan;
     margin-right: 1vw;
-    font-size: 30px;
+    font-size: 2em;
     height: 30vh;
+    border-radius: 70px;
 }
 
 #card2{
@@ -127,8 +133,9 @@ main{
     grid-area: card2;
     background-color:cornflowerblue;
     margin-left: 1vw;
-    font-size: 20px;
+    font-size: 1.2em;
     height: 30vh;
+    border-radius: 70px;
 }
 
 #card1 p {
@@ -234,8 +241,7 @@ main{
     padding: 2em;
     border-radius: 70px;
     border: 3px solid black;
-    font-size: 1em;
-
+    font-size: 1em;   
 }
 
 #dados{
