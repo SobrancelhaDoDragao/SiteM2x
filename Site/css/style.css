@@ -1,4 +1,7 @@
-*{margin: 0;padding: 0;box-sizing: border-box;font-family: Arial,sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Open Sans', sans-serif;}
+
 
 html{
     scroll-behavior: smooth;
@@ -14,6 +17,7 @@ background-image:linear-gradient(to right, #eeeeee 2px, transparent 1px),repeati
 background-size: 25%;
 
 }
+
 
 ul li{
     display: inline;
@@ -50,8 +54,21 @@ header{
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 1em;
-
+    
 }
+    /*1056*/
+@media only screen and (min-width:400px) and (max-width:1056px) {
+
+    .nav{
+        text-align: right;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 1em;
+        background: blue;
+    }
+    
+}
+
 
 main{
     grid-area: main;
@@ -70,7 +87,7 @@ main{
 
 #home{
     grid-area: home;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 #TituloPrincipal{
@@ -123,8 +140,8 @@ main{
     grid-area: card1;
     background-color: darkcyan;
     margin-right: 1vw;
-    font-size: 2em;
-    height: 30vh;
+    font-size: 2.3vw;
+    height: 28vh;
     border-radius: 70px;
 }
 
@@ -133,8 +150,8 @@ main{
     grid-area: card2;
     background-color:cornflowerblue;
     margin-left: 1vw;
-    font-size: 1.2em;
-    height: 30vh;
+    font-size: 1.6vw;
+    height: 28vh;
     border-radius: 70px;
 }
 
@@ -211,26 +228,32 @@ main{
 
 #mais1{
     grid-area: mais1;
+    font-size: 5vw;
 }
 
 #mais2{
     grid-area: mais2;
+    font-size: 5vw;
 }
 
 #mais3{
     grid-area: mais3;
+    font-size: 5vw;
 }
 
 #mais4{
     grid-area: mais4;
+    font-size: 5vw;
 }
 
 #mais5{
     grid-area: mais5;
+    font-size: 5vw;
 }
 
 #mais6{
     grid-area: mais6;
+    font-size: 5vw;
 }
 
 #dados,#sinais,#estrategias,#testeEstrategias,#simulado,#producao{
@@ -241,7 +264,8 @@ main{
     padding: 2em;
     border-radius: 70px;
     border: 3px solid black;
-    font-size: 1em;   
+    font-size: 2.5vw;
+    width: 35vw;   
 }
 
 #dados{
