@@ -1,12 +1,12 @@
 /*------------------- Configurações ---------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
 
-*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Open Sans', sans-serif;}
+*{margin: 0;padding: 0;box-sizing: border-box;outline:0;font-family: 'Open Sans', sans-serif;}
 
 
 html{
     scroll-behavior: smooth;
- }
+}
  
 html,body{
     width: 100%;
@@ -38,7 +38,7 @@ ul li{
 }
 
 .container{
-    margin: 0em 4em;/*Margem em cima e nas laterais*/
+    margin: 0vh 4vw;/*Margem em cima e nas laterais*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -51,7 +51,7 @@ ul li{
 header{
     grid-area: header;
     display: grid;
-    padding-top: auto;
+    padding-top: 1vh;
     grid-template-columns: 1fr 4fr;
     font-size: 18px;
 }
@@ -85,27 +85,23 @@ main{
 }
 
 #home{
+    display: grid;
     grid-area: home;
-    margin-top: 10vh;
+    align-items: center;
 }
 
 #TituloPrincipal{
-   margin: auto;
-   
+   text-align: center;
 }
 
 
 #TituloParte1{
-    font-size: 15vw;
-    text-align: center;
-
-
+    font-size: 10vw;
 }
 
 
 #TituloParte2{
     font-size: 8vw;
-    text-align: center;
 }
 
 #about{
@@ -115,9 +111,7 @@ main{
     grid-template-areas: 
           "texto texto" /*Primeira linha*/
           "card1 card2"
-          
     ;
-   
 }
 
 #texto p{
@@ -141,7 +135,7 @@ main{
     margin-right: 1vw;
     font-size: 2.3vw;
     height: 28vh;
-    border-radius: 70px;
+    border-radius: 60px;
 }
 
 #card2{
@@ -151,20 +145,20 @@ main{
     margin-left: 1vw;
     font-size: 1.6vw;
     height: 28vh;
-    border-radius: 70px;
+    border-radius: 60px;
 }
 
 #card1 p {
     margin: auto;
-    padding: 1em;
+    padding: 2vw;
     text-align: center;
 }
 
 #card2 p {
     margin: auto;
     text-align: justify;
-    padding: 1em;
-    text-indent:10px;
+    padding: 2vw;
+    text-indent:1vw;
 }
 
 
@@ -277,6 +271,7 @@ main{
 
 #estrategias{
     grid-area: estrategias;   
+
 }
 
 #testeEstrategias{
@@ -295,16 +290,15 @@ main{
 #textoprocesso{
     grid-area: textoprocesso;
     text-indent:50px;
-    margin-top: 1em;
+    margin-top: 5vh;
     text-align: justify;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 footer{
     grid-area: footer;
-
     text-align: center;
-    text-indent: 20px;
+    font-size: 1rem;
 }
 
 #M2X{
